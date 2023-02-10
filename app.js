@@ -47,13 +47,13 @@ app.use(function(err, req, res, next) {
     res.render('error');
 });
 
-Database.connect(app, function(err) {
-    if (err) {
-        console.log('Failed to connect to database server');
-    } else {
-        console.log('Connected to database server successfully');
-    }
+// Database.connect(app, function(err) {
+//     if (err) {
+//         console.log('Failed to connect to database server');
+//     } else {
+//         console.log('Connected to database server successfully');
+//     }
 
-});
+// });
 
 module.exports = app;
